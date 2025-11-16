@@ -1,0 +1,68 @@
+@startgantt
+title 项目进度图
+Project starts on 2025-11-15
+
+skinparam shadowing false
+hide footbox
+
+' 需求分析阶段
+[需求分析] lasts 6 days
+[需求分析] is colored in #95a5a6
+[需求评审] happens at [需求分析]'s end
+
+' 系统设计阶段
+[系统设计] lasts 6 days
+[系统设计] is colored in #9b59b6
+[系统设计] starts at [需求评审]'s end
+[设计评审] happens at [系统设计]'s end
+
+' 实现阶段
+[注册与登录] lasts 6 days
+[注册与登录] is colored in #3498db
+[注册与登录] starts at [设计评审]'s end
+
+[订单管理] lasts 6 days
+[订单管理] is colored in #2ecc71
+[订单管理] starts at [设计评审]'s end
+
+[仓库管理] lasts 6 days
+[仓库管理] is colored in #9b59b6
+[仓库管理] starts at [设计评审]'s end
+
+[配送管理] lasts 6 days
+[配送管理] is colored in #e67e22
+[配送管理] starts at [仓库管理]'s end
+[配送管理] starts at [订单管理]'s end
+
+[实时跟踪与通知] lasts 6 days
+[实时跟踪与通知] is colored in #3498db
+[实时跟踪与通知] starts at [配送管理]'s end
+
+[报表与数据分析] lasts 6 days
+[报表与数据分析] is colored in #2ecc71
+[报表与数据分析] starts at [订单管理]'s end
+
+[权限管理与安全] lasts 6 days
+[权限管理与安全] is colored in #9b59b6
+[权限管理与安全] starts at [设计评审]'s end
+
+' 集成与测试阶段
+[模块集成与测试] lasts 6 days
+[模块集成与测试] is colored in #2ecc71
+[模块集成与测试] starts at [权限管理与安全]'s end
+
+[验收测试] lasts 6 days
+[验收测试] is colored in #e74c3c
+[验收测试] starts at [模块集成与测试]'s end
+
+' 部署阶段
+[部署上线] lasts 6 days
+[部署上线] is colored in #f1c40f
+[部署上线] starts at [验收测试]'s end
+[版本发布] happens at [部署上线]'s end
+
+' 运行维护阶段
+[系统维护与支持] lasts 6 days
+[系统维护与支持] is colored in #95a5a6
+[系统维护与支持] starts at [部署上线]'s end
+@endgantt
